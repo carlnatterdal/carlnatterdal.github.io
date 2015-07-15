@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("../font/NexaLight.otf") format('opentype');
+
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+
+.header {
+    background-color: #00BFFF;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+    padding: 20px 40px;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.header .header-limiter {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Logo */
+
+.logo img {
+    
+    float: left;
+    margin: -10px 0px -100px 120px;
+
+}
+
+
+
+.header .header-limiter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .header-limiter nav{
+    /*font:16px Arial, Helvetica, sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    line-height: 40px;
+    float: right;
+}
+
+.header .header-limiter nav a{
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration:none;
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.header .header-limiter nav a:hover{
+    opacity: 1;
+}
+
+.header .header-limiter nav a.selected {
+    color: #608bd2;
+    pointer-events: none;
+    opacity: 1;
+}
+
+
+@media all and (max-width: 600px) {
+
+    .header {
+        padding: 28px 0;
+        height: 120px;
+    }
+
+
+    .header .header-limiter nav {
+        line-height: 1;
+        margin-top: 60px;
+        margin-right: -10px;
+        float:none;
+    }
+
+    .header .header-limiter nav a {
+        font-size: 13px;
+    }
+}
+
+
+.home {
+    font-family: "Nexa";
+    src: url("../font/NexaLight.otf");
+    background-image: url("../images/agsquare.png");
+    background-position: center;
+    padding: 160px 0 160px 0;
+    text-align: center;
+     color: #00BFFF;
+     border-bottom: solid 1px;
+     border-bottom-color: #F2F2F2;
+}
+
+.home h1 {
+    font-size: 60px;
+}
+
+.home h4 {
+    margin-top: -30px;
+    font-size: 40px;
+}
+
+.aboutus {
+    margin-bottom: 40px;
+
+}
+
+.aboutus h1{
+    color: #00BFFF;
+}
+
+
+.aboutus img {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.business {
+  width: 100%;
+  background-image: url("../images/agsquare.png");
+    background-position: center;
+     border-bottom: solid 1px;
+     border-bottom-color: #F2F2F2;
+     border-top: solid 1px;
+     border-top-color: #F2F2F2;
+}
+
+.container {
+  position: relative;
+  width: 1170px;
+  margin: 0 auto;
+  color: #444;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.business .container {
+  padding: 30px 0 50px 0;
+}
+
+.business h1 {
+    padding-top: 10px;
+    font-family: "Nexa";
+    color: #00BFFF;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.business h4 {
+
+    font-size: 25px;
+}
+
+
+.contactus {
+   width: 100%;
+}
+
+.contactus h1 {
+    padding-top: 10px;
+    font-family: "Nexa";
+    color: #00BFFF;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.contactus h4 {
+    margin-top: -20px;
+    text-align: center;
+
+
+}
+
+
+
+form {
+    max-width: 450px;
+    margin: 0 auto 50px 0px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+form [type="submit"] {
+    margin-top: 20px;
+    background: #00BFFF;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    
+}
+
+textarea {
+    height: 10em;
+}
+
+input, textarea {
+
+    font-family: "Nexa";
+
+    border: 2px solid;
+    width: 100%;
+    border-color: #00BFFF;
+    box-sizing: border-box;
+    padding: 10px;
+
+    input:focus{
+        outline: none;
+       
+    }
+
+} 
+
+form .contactinfo label{
+
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+
+    label:nth-child(1){
+        padding-right:5px;
+    }
+
+    label:nth-child(2){
+        padding-left:5px;
+    }
+        
+}
+
+
+label {
+    padding-left: 2px;
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+span {
+    display: block;
+}
+
+
+.col .service {
+  font-size: 21px;
+  font-weight: 300;
+  font-family: "Nexa";
+}
+
+.col .service:after {
+  content: "";
+  width: 50px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+
+.col.four {
+  width: 23%;
+  margin: 0 1%;
+}
+
+.responsivegroup {
+  display: none;
+}
+
+.icon {
+
+  background: #00BFFF;
+  color: white;
+  border-radius: 50%;
+  height: 85px;
+  width: 85px;
+  line-height: 85px;
+  text-align: center;
+  margin: 0 auto;
+  transition: background 0.25s linear, color 0.25s linear;
+
+}
+
+.col {
+  float: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.col.four {
+  width: 23%;
+  margin: 0 1%;
+}
+
+.col.two {
+  width: 40%;
+  margin: 0 2.5%;
+  padding: 0 2.5%;
+}
+
+.col.extrapad {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.col .service:after {
+  content: "";
+  width: 50px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.col .feature {
+  font-size: 19px;
+}
+
+
+.responsivegroup {
+  display: none;
+}
+
+.col p,
+.col h1, .col h2, .col h4 {
+  padding: 0 1%;
+  text-align: center;
+}
+
+.group.margin {
+  margin-bottom: 20px;
+}
+
+
+h2 {
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media all and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .col.four {
+    width: 48%;
+    margin: 1%;
+  }
+ 
+  .responsivegroup {
+    display: block;
+  }
+  .responsivegroup:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media all and (max-width:450px) {
+  .col.four, .col.two {
+    display: block;
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+    float: none;
+  }
+  .col.extrapad {
+    padding: 1%;
+    margin-bottom: 10px;
+  }
+  .group {
+    display: none;
+  }
+}
+
+.footer-basic-centered{
+    background-color:  #00BFFF;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font-family: Roboto, 'Open Sans', Arial, sans-serif;
+
+    padding: 45px;
+    margin-top: 80px;
+}
+
+
+.footer-basic-centered .footer-company-name{
+    color:  #ffffff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-basic-centered {
+    list-style: none;
+    color:  #ffffff;
+    padding: 35px 0 35px;
+    margin: 0;
+}
+
+.footer-basic-centered a{
+    display:inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+    .footer-basic-centered{
+        padding: 35px;
+    }
+
+
+    .footer-basic-centered .footer-company-name{
+        font-size: 12px;
+    }
+
+    .footer-basic-centered .footer-links{
+        font-size: 14px;
+        padding: 25px 0 20px;
+    }
+
+    .footer-basic-centered .footer-links a{
+        line-height: 1.8;
+    }
+
+    
+}
